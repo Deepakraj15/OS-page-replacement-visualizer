@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer</title>
+    <link rel="stylesheet" href="/visualizer.css">
+    <script src="/visualizer.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <nav>
+            <div class="heading">
+                <h1>PA<span> G </span>E REPL<span>A</span>CEMENT <span> V </span>ISUALIZER</h1>
+            </div>
+            <div class="abt"><a href="#">How it works?</a></div>
+        </nav>
+        <div class="holder">
+            <div class="input-area">
+                <div class="string">
+                    <label for="input-string">STRING:</label>
+                    <input type="text" id="input-string" !required>
+                </div>
+                <div class="frame-input">
+                    <label for="framesize">FRAME SIZE:</label>
+                    <input type="number" name="framenumber" id="framesize" min="0" max="10" !required>
+                </div>
+                <div class="selector">
+                    <label for="selector">SELECT AN ALGORITHM:</label>
+                    <select name="algorithm-selector" id="selector">
+                        <option value="none" selected hidden disabled>ALGORITHMS</option>
+                        <option value="fifo">FIFO</option>
+                        <option value="lru">LRU</option>
+                        <option value="optimal">OPTIMAL</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button class="calculate" onclick="calculate()">CALCULATE</button>
+                    <button class="clr" onclick="window.location.reload()">CLEAR</button>
+                </div>
+            </div>
+            <div class="result">
+                <p>NO. of Hits:
+                    <span class="hit"></span>
+                </p>
+                <p>NO. of Faults:
+                    <span class="fault"></span>
+                </p>
+                <p>
+                    Efficiency:
+                    <span class="efficiency"> </span>
+                </p>
+            </div>
+        </div>
+        <div class="table-canvas">
+            <table id="tableID">
+
+                <tr class="theading">
+                    <th>SYMBOL</th>
+                    <th>RESULT</th>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>
