@@ -3,6 +3,9 @@ function calculate() {
     const algo = document.querySelector('select').value;
     const inputString = document.querySelector('#input-string').value;
     const framenumber = document.querySelector('#framesize').value;
+    if (algo == 'none') {
+        alert("SELECT AN ALGORITHM")
+    }
     switch (algo) {
         case 'fifo':
             fifo(inputString, framenumber);
