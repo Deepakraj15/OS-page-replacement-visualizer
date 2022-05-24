@@ -76,7 +76,7 @@ a {
 }
 
 .input-area {
-    margin-left: 300px;
+    margin-left: 200px;
     background-color: var(--peach);
     height: fit-content;
     display: flex;
@@ -227,7 +227,7 @@ td:hover {
     width: 300px;
     border: 5px solid var(--likepink);
     border-radius: 10px;
-    margin-left: 300px;
+    margin-left: 200px;
 }
 
 
